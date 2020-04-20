@@ -1,0 +1,205 @@
+@media (max-width: 650px) {
+  .site-branding {
+    flex-wrap: wrap;
+  }
+  .header-contact {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 940px) {
+  .header_menu ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-menu-line {
+    display: none;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 85%;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .about-us .img-figure {
+    display: none;
+  }
+  .features-item {
+    width: 100% !important;
+  }
+  .about-us-text {
+    width: 100% !important;
+  }
+  .bc-logo-link img {
+    width: auto;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 767px) {
+  .container {
+    width: 90%;
+  }
+  .balcon-buttons-row {
+    padding: 100px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .leave-feedback-block form {
+    padding: 100px;
+  }
+  .pricelist {
+    padding: 0;
+  }
+  .about-us .img-figure {
+    display: none;
+  }
+  .about-us-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .features-item {
+    width: 100% !important;
+  }
+  .about-us-text {
+    width: 100% !important;
+  }
+  .footer-content .bc-logo-link img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 549px) {
+  .container {
+    width: 90%;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .gallery-item {
+    width: 180px;
+  }
+  .about-us .img-figure {
+    display: none;
+  }
+  .about-us-text {
+    width: 100% !important;
+  }
+  .about-us-features {
+    flex-wrap: wrap;
+  }
+  .about-us-features .features-item {
+    width: 100%;
+  }
+  .about-us-betefits ol {
+    grid-template-columns: 1fr;
+  }
+  .callback-block {
+    flex-wrap: wrap;
+  }
+  .callback-block-or {
+    margin: 160px;
+  }
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .leave-feedback-block form {
+    padding: 0;
+  }
+  .pricelist {
+    padding: 0;
+  }
+  .balcon-buttons-row {
+    padding: 100px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .balcon-btn-call {
+    margin-bottom: 40px;
+    width: 250px;
+  }
+  .about-balcon-numbers {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer-content .bc-logo-link img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 413px) {
+  .container {
+    width: 95%;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .gallery-item {
+    width: 100%;
+  }
+  .about-us .img-figure {
+    display: none;
+  }
+  .about-us-text {
+    width: 100% !important;
+  }
+  .about-us-features {
+    flex-wrap: wrap;
+  }
+  .about-us-features .features-item {
+    width: 100%;
+  }
+  .about-us-betefits ol {
+    grid-template-columns: 1fr;
+  }
+  .callback-block {
+    flex-wrap: wrap;
+  }
+  .callback-block-or {
+    margin: 60px;
+  }
+  .card:nth-child(4) .card-icon {
+    margin-right: 20px;
+  }
+  .leave-feedback-block form {
+    padding: 0;
+  }
+  .pricelist {
+    padding: 0;
+  }
+  .balcon-buttons-row {
+    padding: 100px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .balcon-btn-call {
+    margin-bottom: 40px;
+  }
+  .about-balcon-numbers {
+    grid-template-columns: 1fr;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+  }
+  .footer-content .bc-logo-link img {
+    width: 80%;
+  }
+}
