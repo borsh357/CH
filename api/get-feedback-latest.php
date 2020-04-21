@@ -11,7 +11,7 @@ foreach ($rows as $row => $value) {
         <img src="img/feedback/'.$value['image'].'" alt="avatar">
         <div class="feedback-item-sender-info">
             <div class="feedback-item-name">'.$value['name'].'</div>
-            <div class="feedback-item-post-date">'.$value['date'].'</div>
+            <div class="feedback-item-post-date">'.date("d.m.Y", strtotime($value['date'])).'</div>
           </div>
         </div>
         <div class="feedback-item-text">

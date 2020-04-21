@@ -28,7 +28,7 @@ if ($_SESSION['loggedin'] == 1) {
             <img src="../img/feedback/'.$value['image'].'" alt="avatar">
             <div class="feedback-item-sender-info">
                 <div class="feedback-item-name">'.$value['name'].'</div>
-                <div class="feedback-item-post-date">'.date('d.m.yy',time($value['date'])).'</div>
+                <div class="feedback-item-post-date">'.date("d.m.Y", strtotime($value['date'])).'</div>
               </div>
               <div style="margin-left: 10px">';
 

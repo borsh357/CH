@@ -2,3 +2,11 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.*)$ $1.php
+<Files .htaccess> # запретить доступ к .htaccess
+    Order allow,deny
+    Deny from all
+</Files>
+<FilesMatch "cards\.php|footer\.php|header-index\.php|header-balcon\.php|header\.php|nav-links\.php|side-menu\.php|send-feedback\.php|send-callback\.php|pdo\.php|get-pricelist\.php|header-index\.php">
+  Order allow,deny
+  Deny from all
+</FilesMatch>

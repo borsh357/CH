@@ -142,6 +142,9 @@
   .footer-content .bc-logo-link img {
     width: 80%;
   }
+  .balcon-page-bs-logo {
+    width: 100% !important;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 413px) {
@@ -201,5 +204,8 @@
   }
   .footer-content .bc-logo-link img {
     width: 80%;
+  }
+  .balcon-page-bs-logo {
+    width: 100% !important;
   }
 }

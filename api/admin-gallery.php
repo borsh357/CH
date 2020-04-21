@@ -33,7 +33,7 @@ if ($_SESSION['loggedin'] == 1) {
       <img src="../img/gallery/'.$value['url'].'" title="'.$value['title'].'" alt="'.$value['title'].'"" />
       
       </div>
-      <a href="gallery-delete.php?id='.$value['id'].'">Удалить</a>
+      <a href="gallery-delete.php?filename='.$value['url'].'">Удалить</a>
       </div>
       ';
     }

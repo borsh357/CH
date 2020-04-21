@@ -19,19 +19,6 @@ $date = date("d.m.y");
 
 $stmt = $pdo->prepare('INSERT INTO `feedback`(`image`, `name`, `date`, `content`) VALUES (?,?,?,?)');
 $stmt->execute([$filename,$name,$date,$content]);
+
+echo 'Отзыв отправлен';
 ?>
-<h1 style="text-align:center">Отзыв отправлен</h1>
-<p>Возврат через: <span id="timeout">4</span></p>
-
-<script>
-  var timeout = document.getElementById('timeout');
-  var seconds = 3;
-
-  setInterval(function () {
-    timeout.innerHTML = seconds;
-    seconds--;
-    if (seconds === 0) {
-      history.go(-1);
-    }
-  }, 1000)
-</script>

@@ -32,7 +32,7 @@
   <p>Больше информации о балконах Вы можете найти на нашем втором сайте:</p>
   <div class="text-center bc-logo-link">
     <a href="https://www.balkonservis12.com/" target="_blank">
-      <img src="img/balconservicelogo.svg" alt="balconservice">
+      <img class="balcon-page-bs-logo" src="img/balconservicelogo.svg" alt="balconservice">
     </a>
   </div>
 </div>

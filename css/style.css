@@ -459,7 +459,7 @@ a {
 }
 
 .gallery-item img {
-  width: 100%;
+  height: 300px;
 }
 
 .balcon-buttons-row {
@@ -548,4 +548,8 @@ a {
 
 .footer-content {
   display: flex;
+}
+
+.balcon-page-bs-logo {
+  width: 50% !important;
 }

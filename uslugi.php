@@ -7,7 +7,7 @@
       подробным прайс-листом предоставляемых услуг. Если Вы не нашли интересующую Вас услугу в прайс-листе, Вы можете
       обсудить это с нашим менеджером.</p>
     <div class="pricelist">
-      <?php require './api/get-pricelist.php' ?>
+      <?php require_once './api/get-pricelist.php' ?>
     </div>
   </div>
   </div>

@@ -10,22 +10,41 @@
     </div>
 
     <div class="leave-feedback-block">
-      <form id="send-feedback-form" action="api/send-feedback.php" method="Post" enctype='multipart/form-data'>
+      <form id="send-feedback-form" action="#" method="Post" enctype='multipart/form-data'>
         <input name="name" type="text" placeholder="Имя" required>
         <textarea name="content" cols="30" rows="10" placeholder="Отзыв" required></textarea>
         <label>
           Аватар:
-          <input name="image" type="file">
+          <input id="user-image" name="image" type="file">
         </label>
         <input type="submit">
       </form>
     </div>
+    <script>
+      $('#send-feedback-form').submit(function (e) {
+        e.preventDefault();
+        var form = this;
+        var formData = new FormData(form);
+
+        $.ajax({
+          type: "POST",
+          enctype: 'multipart/form-data',
+          url: "/api/send-feedback.php",
+          data: formData,
+          processData: false,
+          contentType: false,
+          cache: false,
+          timeout: 600000,
+          success: function (data) {
+            alert(data)
+            $('#send-feedback-form').find("input[type=text], input[type=file], textarea").val("");
+          },
+          error: function (e) {
+            console.log("ERROR : ", e);
+          }
+        });
+      });
+    </script>
 
 </section>
-
-<script>
-$(function() {
-  $('#send-feedback-form').find("input[type=text], input[type=file], textarea").val("");
-})
-</script>
 <?php require_once './parts/footer.php' ?>

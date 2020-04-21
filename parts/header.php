@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/hamburger.css">
   <link rel="stylesheet" href="css/screens.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/jquery.min.js"></script>
 </head>
 
 <body>

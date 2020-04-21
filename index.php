@@ -173,4 +173,9 @@
   </div>
 </section>
 <!-- end of content section -->
+<link rel="stylesheet" href="plugins/lightzoom/style.css" type="text/css">
+<script src="plugins/lightzoom/lightzoom.js"></script>
+<script type="text/javascript">
+jQuery('.lightzoom').lightzoom();
+</script>
 <?php require_once './parts/footer.php' ?>

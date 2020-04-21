@@ -20,7 +20,7 @@ if ($_SESSION['loggedin'] == 1) {
     <div class="admin-callback-item">
       <p>'.$value['name'].'</p>
       <p>'.$value['phone'].'</p>
-      <p>'.date('d.m.yy',time($value['date'])).'</p>
+      <p>'.date("d.m.Y", strtotime($value['date'])).'</p>
       <p><a href="delete-callback.php?id='.$value['id'].'">Удалить</a></p>
     </div>
     <hr>
