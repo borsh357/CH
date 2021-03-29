@@ -114,6 +114,7 @@ body {
   border: 1px solid #000;
   position: relative;
   height: 40px;
+  cursor: pointer;
 }
 
 .card-btn:active {
@@ -552,4 +553,188 @@ a {
 
 .balcon-page-bs-logo {
   width: 50% !important;
+}
+
+.price-calc-container {
+  border: 1px solid #757575;
+  padding: 0 30px;
+  margin-bottom: 60px;
+}
+
+.price-calc-row {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.price-calc-row-line {
+  width: 100%;
+}
+
+.price-calc-row-content {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* .price-calc-row-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+} */
+
+.price-calc-row-content-left {
+  margin-right: 40px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-calc-row-content-middle {
+  border-left: 1px dashed #fea97a;
+  margin-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-calc-row-content-right {
+  border-left: 1px dashed #fea97a;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-calc-row-dashed-line {
+  border-bottom: 1px dashed #fea97a;
+  margin-top: 30px;
+}
+
+.price-calc-row .price-calc-row-cat-header {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price-calc-row .price-calc-row-number {
+  color: #fea97a;
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-right: 20px;
+}
+
+.price-calc-row .price-calc-row-header {
+  margin-top: 20px;
+  color: #ff8363;
+  font-size: 1.4rem;
+}
+
+.price-calc-row label {
+  font-size: 1rem;
+}
+
+.price-calc-row input {
+  color: #ff8363;
+  font-size: 1rem;
+}
+
+.price-calc-row input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #e6e6e6;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.price-calc-row input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ff8363;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.price-calc-row input[type='checkbox']:after {
+  width: 15px;
+  height: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #e6e6e6;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.price-calc-row input[type='checkbox']:checked:after {
+  width: 15px;
+  height: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ff8363;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.price-calc-total {
+  padding: 20px 40px;
+  background: #d1d1d1;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.price-calc-total-price-block {
+  display: flex;
+}
+
+.price-calc-total-header {
+  font-size: 0.8rem;
+}
+
+.price-calc-total-col {
+  margin-right: 60px;
+}
+
+.price-calc-total-price {
+  font-size: 2rem;
+  color: #ff5b30;
+  padding: 0;
+  margin: 0;
+}
+
+.price-calc-total-btn {
+  outline: none;
+  background: linear-gradient(-45deg, #fea97a, rgb(236, 134, 103));
+  padding: 5px 20px;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  position: relative;
+  height: 40px;
+  align-self: center;
+  cursor: pointer;
 }

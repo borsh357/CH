@@ -1,7 +1,7 @@
 <?php require_once './parts/header-index.php' ?>
 <section class="content">
   <div class="container">
-
+    <?php require_once './parts/calc.php' ?>
     <div id="about-us" class="about-us">
       <h3>О нас</h3>
       <div class="flex-break"></div>

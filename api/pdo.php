@@ -18,4 +18,10 @@ try {
 } catch (PDOException $e) {
     echo 'Подключение не удалось: ' . $e->getMessage();
 }
-?>
+
+function getSingleValue($pdo, $sql)
+{
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    return $stmt->fetchColumn();
+}
