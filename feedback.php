@@ -10,6 +10,7 @@
     </div>
 
     <div class="leave-feedback-block">
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <form id="send-feedback-form" action="#" method="Post" enctype='multipart/form-data'>
         <input name="name" type="text" placeholder="Имя" required>
         <textarea name="content" cols="30" rows="10" placeholder="Отзыв" required></textarea>
@@ -17,33 +18,36 @@
           Аватар:
           <input id="user-image" name="image" type="file">
         </label>
+        <div class="g-recaptcha" data-sitekey="6LekfaEaAAAAAPhnx_L9dgE_DgfLNeR7JZw1Yu_6"></div>
         <input type="submit">
       </form>
     </div>
     <script>
-      $('#send-feedback-form').submit(function (e) {
-        e.preventDefault();
-        var form = this;
-        var formData = new FormData(form);
+    $('#send-feedback-form').submit(function(e) {
+      e.preventDefault();
+      var form = this;
+      var formData = new FormData(form);
+      formData.append('ajax', true);
 
-        $.ajax({
-          type: "POST",
-          enctype: 'multipart/form-data',
-          url: "/api/send-feedback.php",
-          data: formData,
-          processData: false,
-          contentType: false,
-          cache: false,
-          timeout: 600000,
-          success: function (data) {
-            alert(data)
-            $('#send-feedback-form').find("input[type=text], input[type=file], textarea").val("");
-          },
-          error: function (e) {
-            console.log("ERROR : ", e);
-          }
-        });
+      $.ajax({
+        type: "POST",
+        enctype: 'multipart/form-data',
+        url: "/api/send-feedback.php",
+        data: formData,
+        processData: false,
+        contentType: false,
+        cache: false,
+        timeout: 600000,
+        success: function(data) {
+          alert(data)
+          $('#send-feedback-form').find("input[type=text], input[type=file], textarea").val("");
+          grecaptcha.reset();
+        },
+        error: function(e) {
+          console.log("ERROR : ", e);
+        }
       });
+    });
     </script>
 
 </section>

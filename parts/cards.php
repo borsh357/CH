@@ -56,7 +56,7 @@
         <img src="img/svgs/balcony.svg" alt="icon">
         <h3 class="text-center">Ремонт балкона, лоджии</h3>
       </div>
-      <a href="#">
+      <a href="balcon">
         <button class="card-btn">Подробнее</button>
       </a>
     </div>

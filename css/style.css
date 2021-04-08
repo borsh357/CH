@@ -6,7 +6,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   background: #e6e6e6;
 }
@@ -17,14 +17,14 @@ body {
 }
 
 .header {
-  background: url('../img/body-bg.jpg');
+  background: url("../img/body-bg.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
 }
 
 .header-balcon {
-  background: url('../img/balconserviceheader.jpg');
+  background: url("../img/balconserviceheader.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -327,7 +327,7 @@ a {
 }
 
 .callback-block-bg {
-  background: url('../img/bg3.jpg');
+  background: url("../img/bg3.jpg");
   background-position: center;
   background-size: cover;
   margin-top: 40px;
@@ -374,6 +374,10 @@ a {
   margin-bottom: 10px;
 }
 
+.callback-modal-body form input[type="submit"] {
+  margin-top: 20px;
+}
+
 .bc-logo-link img {
   cursor: pointer;
   width: 100%;
@@ -396,7 +400,7 @@ a {
 }
 
 .about-us-betefits-bg {
-  background: url('../img/bg2.jpg');
+  background: url("../img/bg2.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -522,13 +526,14 @@ a {
   outline: none;
   padding: 10px;
 }
-.leave-feedback-block form input[type='text'],
+.leave-feedback-block form input[type="text"],
 .leave-feedback-block form textarea {
   border: 1px solid #000;
 }
 
-.leave-feedback-block form input[type='submit'] {
+.leave-feedback-block form input[type="submit"] {
   background: #b0ddff;
+  margin-top: 10px;
 }
 
 .admin-callback-item {
@@ -620,7 +625,7 @@ a {
 .price-calc-row .price-calc-row-number {
   color: #fea97a;
   font-size: 3rem;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   margin-right: 20px;
 }
 
@@ -639,7 +644,7 @@ a {
   font-size: 1rem;
 }
 
-.price-calc-row input[type='radio']:after {
+.price-calc-row input[type="radio"]:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -647,14 +652,14 @@ a {
   left: -1px;
   position: relative;
   background-color: #e6e6e6;
-  content: '';
+  content: "";
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
   cursor: pointer;
 }
 
-.price-calc-row input[type='radio']:checked:after {
+.price-calc-row input[type="radio"]:checked:after {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -662,35 +667,35 @@ a {
   left: -1px;
   position: relative;
   background-color: #ff8363;
-  content: '';
+  content: "";
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
   cursor: pointer;
 }
 
-.price-calc-row input[type='checkbox']:after {
+.price-calc-row input[type="checkbox"]:after {
   width: 15px;
   height: 15px;
   top: -2px;
   left: -1px;
   position: relative;
   background-color: #e6e6e6;
-  content: '';
+  content: "";
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
   cursor: pointer;
 }
 
-.price-calc-row input[type='checkbox']:checked:after {
+.price-calc-row input[type="checkbox"]:checked:after {
   width: 15px;
   height: 15px;
   top: -2px;
   left: -1px;
   position: relative;
   background-color: #ff8363;
-  content: '';
+  content: "";
   display: inline-block;
   visibility: visible;
   border: 2px solid white;

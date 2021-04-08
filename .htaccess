@@ -6,7 +6,7 @@ RewriteRule ^(.*)$ $1.php
     Order allow,deny
     Deny from all
 </Files>
-<FilesMatch "cards\.php|footer\.php|header-index\.php|header-balcon\.php|header\.php|nav-links\.php|side-menu\.php|send-feedback\.php|send-callback\.php|pdo\.php|get-pricelist\.php|get-gallery\.php|get-gallery-latest\.php|get-feedback-latest\.php|get-feedback-all\.php|admin-header\.php">
+<FilesMatch "cards\.php|footer\.php|header-index\.php|header-balcon\.php|header\.php|nav-links\.php|side-menu\.php|pdo\.php|get-pricelist\.php|get-gallery\.php|get-gallery-latest\.php|get-feedback-latest\.php|get-feedback-all\.php|admin-header\.php">
   Order allow,deny
   Deny from all
 </FilesMatch>

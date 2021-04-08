@@ -311,7 +311,7 @@ $('.price-calc-container input').on('change', function() {
   }
 
   if (montageElectricity === "true") {
-    montageElectricity_price = objectArea * 2 * pricelist.montage_electricity_price;
+    montageElectricity_price = Math.sqrt(objectArea) * 4 * pricelist.montage_electricity_price;
   } else {
     montageElectricity_price = 0;
   }
@@ -323,7 +323,7 @@ $('.price-calc-container input').on('change', function() {
   }
 
   if (montageWater === "true") {
-    montageWater_price = objectArea * pricelist.montage_pipe_price;
+    montageWater_price = objectArea / 2 * pricelist.montage_pipe_price;
   } else {
     montageWater_price = 0;
   }
@@ -382,8 +382,8 @@ $('.price-calc-container input').on('change', function() {
     floorCoverCount--;
   }
 
-  let montageFloor_totalPrice = (montageFloorLaminat_price + montageFloorMassive_price +
-    montageFloorParket_price + montageFloorTile_price + montageFloorLinoleum_price);
+  let montageFloor_totalPrice = montageFloorLaminat_price + montageFloorMassive_price +
+    montageFloorParket_price + montageFloorTile_price + montageFloorLinoleum_price;
   floorCoverCount = Math.round(floorCoverCount / 2);
 
   if (floorCoverCount > 0) {
@@ -477,6 +477,6 @@ $('.price-calc-container input').on('change', function() {
 
   //output
   $('.price-calc-total-price-total').text(Math.round(total_price) + ' руб.');
-  $('.price-calc-total-price-material').text(Math.round(total_price * 0.4) + ' руб.');
+  $('.price-calc-total-price-material').text(Math.round(total_price * 0.5) + ' руб.');
 })
 </script>
