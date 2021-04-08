@@ -17,20 +17,6 @@
               <input type="submit" value="Отправить">
             </form>
             <small>Оставьте заявку и мы Вам перезвоним</small>
-
-            <script>
-            $('#callback-form').submit(function(e) {
-              e.preventDefault();
-              var data = $('#callback-form').serialize();
-              data += '&ajax=true';
-              $.post("api/send-callback.php", data)
-                .done(function(data) {
-                  alert(data);
-                  $('#callback-form').find("input[type=text]").val("");
-                  grecaptcha.reset();
-                });
-            });
-            </script>
           </div>
         </div>
       </div>

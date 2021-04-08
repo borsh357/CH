@@ -743,3 +743,10 @@ a {
   align-self: center;
   cursor: pointer;
 }
+
+#callback-form input {
+  outline: none;
+  border: 1px solid #a3a3a3;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+}
