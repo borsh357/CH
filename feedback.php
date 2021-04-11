@@ -10,7 +10,7 @@
     </div>
 
     <div class="leave-feedback-block">
-      <script src="https://www.google.com/recaptcha/api.js" async defer />
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       <form id="send-feedback-form" action="#" method="Post" enctype='multipart/form-data'>
         <input name="name" type="text" placeholder="Имя" required>
         <textarea name="content" cols="30" rows="10" placeholder="Отзыв" required></textarea>
@@ -18,9 +18,11 @@
           Аватар:
           <input id="user-image" name="image" type="file">
         </label>
-        <div class="g-recaptcha" data-sitekey="6LekfaEaAAAAAPhnx_L9dgE_DgfLNeR7JZw1Yu_6" />
+        <div class="g-recaptcha" data-sitekey="6LekfaEaAAAAAPhnx_L9dgE_DgfLNeR7JZw1Yu_6"></div>
         <input type="submit">
       </form>
     </div>
+
+
 </section>
 <?php require_once './parts/footer.php' ?>
