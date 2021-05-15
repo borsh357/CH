@@ -256,7 +256,7 @@ echo "<script>
         <p class="price-calc-total-price price-calc-total-price-material">0 руб.</p>
       </div>
     </div>
-    <button class="price-calc-total-btn">Вызвать замерщика</button>
+    <a href="#callback-block"><button class="price-calc-total-btn">Вызвать замерщика</button></a>
   </div>
 
 </div> <!-- </div> end of calc container -->
