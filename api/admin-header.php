@@ -22,6 +22,9 @@
         <span></span>
         <span></span>
         <ul id="menu">
+          <a href="admin-siteparams.php">
+            <li>Параметры сайта</li>
+          </a>
           <a href="admin-callback.php">
             <li>Заявки на звонок</li>
           </a>

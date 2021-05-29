@@ -4,7 +4,7 @@
       <div id="callback-block" class="callback-block">
         <div class="callback-block-phone">
           <p>Звоните прямо сейчас</p>
-          <a href="tel:+7(937)-939-50-70">+7(937)-939-50-70</a>
+          <a href="tel:<?php echo $GLOBALS['phoneNum'] ?>"><?php echo $GLOBALS['phoneNum'] ?></a>
         </div>
         <div class="callback-block-or">или</div>
         <div class="callback-block-modal-block">

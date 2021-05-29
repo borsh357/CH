@@ -537,8 +537,14 @@ a {
 }
 
 .admin-callback-item {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 4fr 4fr 4fr 1fr 1fr;
+}
+
+.admin-callback-item select {
+  height: fit-content;
+  align-self: center;
 }
 
 .callback-modal-body form input {
@@ -749,4 +755,25 @@ a {
   border: 1px solid #a3a3a3;
   font-size: 1.2rem;
   padding: 5px 10px;
+}
+
+.admin-siteparams-param form {
+  display: grid;
+  grid-template-columns: 4fr 4fr 1fr;
+  grid-gap: 20px;
+  align-items: baseline;
+}
+
+.admin-siteparams-param form p {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-siteparams-param textarea {
+  height: fit-content;
+  padding: 10px;
+}
+
+.admin-siteparams-param button {
+  padding: 5px;
 }
