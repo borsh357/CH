@@ -25,29 +25,29 @@ if ($_SESSION['loggedin'] == 1) {
       echo '
         <div class="feedback-item">
           <div class="feedback-item-avatar">
-            <img src="../img/feedback/'.$value['image'].'" alt="avatar">
+            <img src="../img/feedback/' . $value['image'] . '" alt="avatar">
             <div class="feedback-item-sender-info">
-                <div class="feedback-item-name">'.$value['name'].'</div>
-                <div class="feedback-item-post-date">'.date("d.m.Y", strtotime($value['date'])).'</div>
+                <div class="feedback-item-name">' . $value['name'] . '</div>
+                <div class="feedback-item-post-date">' . date("d.m.Y", strtotime($value['date'])) . '</div>
               </div>
               <div style="margin-left: 10px">';
 
-            if ($value['approved']) {
-              echo '<small>Подтвержден</small>
-                    <a href="feedback-unapprove.php?id='.$value['id'].'">Отменить</a>
+      if ($value['approved']) {
+        echo '<small>Подтвержден</small>
+                    <a href="feedback-unapprove.php?id=' . $value['id'] . '">Отменить</a>
               ';
-            } else {
-              echo '<small>Не подтвержден</small>
-                    <a href="feedback-approve.php?id='.$value['id'].'">Подтвердить</a>
+      } else {
+        echo '<small style="display:block; width:135px; color:red">Не подтвержден</small>
+                    <a style="display:block;" href="feedback-approve.php?id=' . $value['id'] . '">Подтвердить</a>
                     ';
-            }
+      }
 
-              echo '
-              <a href="feedback-delete.php?id='.$value['id'].'">Удалить</a>
+      echo '
+              <a href="feedback-delete.php?id=' . $value['id'] . '">Удалить</a>
             </div>
             </div>
             <div class="feedback-item-text">
-              '.$value['content'].'
+              ' . $value['content'] . '
             </div>
           </div>
             ';
