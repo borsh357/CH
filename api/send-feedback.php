@@ -13,6 +13,10 @@ if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
   $arr = json_decode($rsp, TRUE);
   if ($arr['success']) {
 
+    if (!boolval(preg_match('/[а-яА-Я]/', $_POST['name']))) {
+      die('VALIDATION_ERROR');
+    }
+
     require_once 'pdo.php';
     //upload file
     if (!empty($_FILES['image']['name'])) {
@@ -34,8 +38,8 @@ if (isset($_POST['g-recaptcha-response']) && $_POST['g-recaptcha-response']) {
     $stmt = $pdo->prepare('INSERT INTO `feedback`(`image`, `name`, `date`, `content`) VALUES (?,?,?,?)');
     $stmt->execute([$filename, $name, $date, $content]);
 
-    echo 'Отзыв отправлен';
+    echo 'OK';
   }
 } else {
-  die('Captcha error.');
+  die('CAPTCHA_ERROR');
 }

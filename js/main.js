@@ -16,9 +16,26 @@ $("#callback-form").submit(function (e) {
   var data = $("#callback-form").serialize();
   data += "&ajax=true";
   $.post("api/send-callback.php", data).done(function (data) {
-    alert(data);
-    $("#callback-form").find("input[type=text]").val("");
-    grecaptcha.reset();
+    switch (data) {
+      case "OK":
+        $("#callback-form").find("input[type=text]").val("");
+        grecaptcha.reset();
+        showFormNotification("success", "Заявка отправлена.");
+        break;
+      case "CAPTCHA_ERROR":
+        grecaptcha.reset();
+        showFormNotification("error", "Ошибка captcha. Попробуйте еще раз.");
+        break;
+      case "VALIDATION_ERROR":
+        grecaptcha.reset();
+        showFormNotification(
+          "error",
+          "Ошибка валидации данных. Проверьте введенные данные."
+        );
+        break;
+      default:
+        break;
+    }
   });
 });
 
@@ -39,14 +56,51 @@ $("#send-feedback-form").submit(function (e) {
     cache: false,
     timeout: 600000,
     success: function (data) {
-      alert(data);
-      $("#send-feedback-form")
-        .find("input[type=text], input[type=file], textarea")
-        .val("");
-      grecaptcha.reset();
+      switch (data) {
+        case "OK":
+          $("#send-feedback-form")
+            .find("input[type=text], input[type=file], textarea")
+            .val("");
+          grecaptcha.reset();
+          showFormNotification("success", "Отзыв отправлен.");
+          break;
+        case "CAPTCHA_ERROR":
+          grecaptcha.reset();
+          showFormNotification("error", "Ошибка captcha. Попробуйте еще раз.");
+          break;
+        case "VALIDATION_ERROR":
+          grecaptcha.reset();
+          showFormNotification(
+            "error",
+            "Ошибка валидации данных. Проверьте введенные данные."
+          );
+          break;
+        default:
+          break;
+      }
     },
     error: function (e) {
       console.log("ERROR : ", e);
     },
   });
 });
+
+function showFormNotification(type, text) {
+  switch (type) {
+    case "success":
+      console.log(1);
+      $(".form-notification-success").text(text);
+      $(".form-notification-success").fadeIn(1000);
+      setTimeout(() => {
+        $(".form-notification-success").fadeOut(1000);
+      }, 5000);
+      break;
+    case "error":
+      $(".form-notification-error").text(text);
+      $(".form-notification-error").fadeIn(1000);
+      setTimeout(() => {
+        $(".form-notification-error").fadeOut(1000);
+      }, 5000);
+      break;
+  }
+}

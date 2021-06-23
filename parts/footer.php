@@ -22,6 +22,9 @@
       </div>
     </div>
 
+    <div class="form-notification-success"></div>
+    <div class="form-notification-error"></div>
+
     <section class="footer">
       <div class="container footer-content">
         <ul class="footer-menu">

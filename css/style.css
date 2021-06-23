@@ -776,3 +776,29 @@ a {
 .admin-siteparams-param button {
   padding: 5px;
 }
+
+.form-notification-success {
+  padding: 20px 40px;
+  color: white;
+  background: rgb(103, 204, 94);
+  border-radius: 15px;
+  position: fixed;
+  opacity: 0.9;
+  border: 1px solid;
+  top: 55px;
+  right: 10px;
+  display: none;
+}
+
+.form-notification-error {
+  padding: 20px 40px;
+  color: white;
+  background: rgb(230, 88, 88);
+  border-radius: 15px;
+  position: fixed;
+  opacity: 0.9;
+  border: 1px solid;
+  top: 55px;
+  right: 10px;
+  display: none;
+}
