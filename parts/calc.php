@@ -68,7 +68,7 @@ echo "<script>
           </div>
         </div>
 
-        <div class="price-calc-row-content-right">
+        <div class="price-calc-type price-calc-row-content-right">
           <p class="price-calc-row-cat-header">Вид объекта</p>
           <div>
             <input type="radio" name="object-state" id="object-state-new" value="new">
@@ -228,7 +228,7 @@ echo "<script>
           </div>
         </div>
 
-        <div class="price-calc-row-content-right">
+        <div class="price-calc-ceiling price-calc-row-content-right">
           <p class="price-calc-row-cat-header">Отделка потолка</p>
           <div>
             <input type="checkbox" name="montage-ceiling-paint" id="montage-ceiling-paint">

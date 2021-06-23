@@ -745,7 +745,6 @@ a {
   border: 1px solid #000;
   border-radius: 10px;
   position: relative;
-  height: 40px;
   align-self: center;
   cursor: pointer;
 }

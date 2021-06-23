@@ -1,15 +1,24 @@
-@media (max-width: 650px) {
-  .site-branding {
-    flex-wrap: wrap;
+/* @media (max-width: 1240px) {
+  .price-calc-row-content-right {
+    border-left: none;
+    padding-left: 0;
+    flex-basis: 100%;
+    margin-top: 40px;
   }
-  .header-contact {
-    margin-top: 20px;
-  }
-}
+} */
 
 @media (max-width: 940px) {
   .header_menu ul li {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 910px) {
+  .price-calc-type {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-top: 20px;
   }
 }
 
@@ -22,7 +31,29 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 650px) {
+  .site-branding {
+    flex-wrap: wrap;
+  }
+  .header-contact {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 635px) {
+  .price-calc-row-content-right {
+    flex-basis: 100%;
+    margin-top: 20px !important;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .price-calc-row-content input[type="number"] {
+    width: 180px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
   .container {
     width: 85%;
   }
@@ -42,9 +73,13 @@
   .bc-logo-link img {
     width: auto;
   }
+  .price-calc-total-btn {
+    font-size: 1rem;
+    height: auto;
+  }
 }
 
-@media (min-width: 550px) and (max-width: 767px) {
+@media (min-width: 550px) and (max-width: 768px) {
   .container {
     width: 90%;
   }
@@ -79,6 +114,34 @@
   }
   .footer-content .bc-logo-link img {
     width: 90%;
+  }
+  .price-calc-total-btn {
+    font-size: 1rem;
+    height: auto;
+  }
+  .price-calc-total {
+    flex-wrap: wrap;
+  }
+  .price-calc-total-price-block {
+    flex-wrap: wrap;
+  }
+  .price-calc-total-col {
+    margin-bottom: 20px;
+  }
+  .price-calc-container {
+    padding: 0 5px;
+  }
+  .price-calc-row-content-middle,
+  .price-calc-ceiling {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .price-calc-row-content-left {
+    margin: 0;
+    min-width: 250px;
+    margin-right: 20px;
   }
 }
 
@@ -145,6 +208,32 @@
   .balcon-page-bs-logo {
     width: 100% !important;
   }
+  .price-calc-total {
+    flex-wrap: wrap;
+  }
+  .price-calc-total-price-block {
+    flex-wrap: wrap;
+  }
+  .price-calc-total-col {
+    margin-bottom: 20px;
+  }
+  .price-calc-container {
+    padding: 0 5px;
+  }
+  .price-calc-row-content-middle,
+  .price-calc-row-content-right {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+  }
+  .price-calc-row-content-left {
+    margin: 0;
+  }
+  .price-calc-row-content-left {
+    min-width: 0;
+    margin-right: 20px;
+  }
 }
 
 @media (min-width: 360px) and (max-width: 413px) {
@@ -207,5 +296,30 @@
   }
   .balcon-page-bs-logo {
     width: 100% !important;
+  }
+  .price-calc-total {
+    flex-wrap: wrap;
+  }
+  .price-calc-total-price-block {
+    flex-wrap: wrap;
+  }
+  .price-calc-total-col {
+    margin-bottom: 20px;
+  }
+  .price-calc-container {
+    padding: 0 5px;
+  }
+  .price-calc-row-content-middle,
+  .price-calc-row-content-right {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+  }
+  .price-calc-row-content-left {
+    margin: 0;
+  }
+  .price-calc-row-content-left {
+    min-width: 0;
   }
 }
